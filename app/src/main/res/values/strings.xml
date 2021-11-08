@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">All Activities</string>
+    <string name="btn_calc_rad">Botón Calculadora Radio</string>
+    <string name="btn_calc_sp">Botón Calculadora Spinner</string>
+    <string name="btn_list">Botón Notas List</string>
+    <string name="btn_actvs">Botón Navegación Activities</string>
+    <string name="btn_web">Botón Web</string>
+    <string name="txt_calc_rad">Calculadora Radio</string>
+    <string name="txt_calc_sp">Calculadora Spinner</string>
+    <string name="txt_list">Notas List</string>
+    <string name="txt_actvs">Navegación Activities</string>
+    <string name="txt_num2">Ingresa el segundo valor</string>
+    <string name="txt_num1">Ingresa el primer valor</string>
+    <string name="btn_sumar">Sumar</string>
+    <string name="btn_restar">Restar</string>
+    <string name="btn_calcular">Calcular</string>
+    <string name="txt_resultado">Resultado:</string>
+    <string name="btn_volver">Volver</string>
+    <string-array name="opc_calc_array">
+        <item>Sumar</item>
+        <item>Restar</item>
+        <item>Multiplicar</item>
+        <item>Dividir</item>
+    </string-array>
+    <string name="txt_res">Selecciona un nombre</string>
+    <string name="pt_nombre"></string>
+    <string name="btn_enviar">Enviar</string>
+    <string name="txt_nombre"></string>
+    <string name="btn_regresar">Regresar</string>
+    <string name="botonIr">Ir al sitio</string>
+    <string name="txt_web"></string>
+    <string name="botonCerrar">Cerrar</string>
+</resources>

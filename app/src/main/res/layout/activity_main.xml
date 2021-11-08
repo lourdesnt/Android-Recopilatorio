@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/btn_calc_rad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/btn_calc_rad"
+        android:onClick="toCalculadoraRadio"
+        app:layout_constraintBottom_toTopOf="@+id/txt_calc_rad"
+        app:layout_constraintEnd_toEndOf="@+id/txt_calc_rad"
+        app:srcCompat="@drawable/calculator" />
+
+    <ImageButton
+        android:id="@+id/btn_calc_sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/btn_calc_sp"
+        android:onClick="toCalculadoraSpinner"
+        app:layout_constraintBottom_toTopOf="@+id/txt_calc_sp"
+        app:layout_constraintStart_toStartOf="@+id/txt_calc_sp"
+        app:srcCompat="@drawable/calculator_plus" />
+
+    <ImageButton
+        android:id="@+id/btn_actvs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/btn_actvs"
+        android:onClick="toNavActivities"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_list"
+        app:srcCompat="@drawable/pages" />
+
+    <ImageButton
+        android:id="@+id/btn_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="63dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/btn_list"
+        android:onClick="toNotasList"
+        app:layout_constraintEnd_toEndOf="@+id/txt_calc_rad"
+        app:layout_constraintStart_toStartOf="@+id/btn_calc_rad"
+        app:layout_constraintTop_toBottomOf="@+id/txt_calc_rad"
+        app:srcCompat="@drawable/exam" />
+
+    <ImageButton
+        android:id="@+id/btn_web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/btn_web"
+        android:onClick="toWeb"
+        app:layout_constraintBottom_toTopOf="@+id/txt_web"
+        app:layout_constraintStart_toEndOf="@+id/txt_list"
+        app:srcCompat="@drawable/www" />
+
+    <TextView
+        android:id="@+id/txt_calc_rad"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="185dp"
+        android:layout_marginEnd="123dp"
+        android:text="@string/txt_calc_rad"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/txt_calc_sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_calc_sp"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="185dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="186dp"
+        android:text="@string/txt_calc_sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_actvs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_calc_rad"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_list"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/txt_list"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/btn_list"
+        app:layout_constraintStart_toStartOf="@+id/btn_list"
+        app:layout_constraintTop_toBottomOf="@+id/btn_list" />
+
+    <TextView
+        android:id="@+id/txt_actvs"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="6dp"
+        android:text="@string/txt_actvs"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_list"
+        app:layout_constraintEnd_toEndOf="@+id/btn_actvs"
+        app:layout_constraintStart_toStartOf="@+id/btn_actvs"
+        app:layout_constraintTop_toBottomOf="@+id/btn_actvs" />
+
+    <TextView
+        android:id="@+id/txt_web"
+        android:layout_width="0dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="139dp"
+        android:layout_marginBottom="140dp"
+        android:text="WebView"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_web"
+        app:layout_constraintStart_toStartOf="@+id/btn_web"
+        app:layout_constraintTop_toBottomOf="@+id/txt_list" />
+</androidx.constraintlayout.widget.ConstraintLayout>
